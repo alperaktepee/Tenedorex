@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Poppins:ital,wght@1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20vh 0;
+  background-color: wheat;
+}
+.container {
+  width: 90%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.brand {
+  text-align: center;
+  font-size: 4rem;
+  color: brown;
+}
+form {
+  margin: 3.2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form input {
+  width: 60vh;
+  height: 8vh;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+}
+.icon {
+  margin: 0 0 0 -50px;
+  border: none;
+  background-color: brown;
+  color:white;
+  height: 8vh;
+  width: 55px;
+  border-radius:8px ;
+  
+}
+.search-result {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-gap: 25px;
+  grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
+}
+h1+a{
+  color:whitesmoke;
+  text-decoration: none;
+}
+h1+a:hover{
+  color:wheat;
+  transition: 0.1s;
+}
+
+h3{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.item {
+  width: 100%;
+  border-radius: 8px;
+  background-color: brown;
+  padding: 15px;
+  overflow: hidden;
+}
+.item img {
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-result .title {
+  color: whitesmoke;
+  margin: 20px 10px 0 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.view-btn {
+  text-decoration: none;
+  text-align: center;
+  width: 130px;
+  padding: 10px 0;
+  background-color: #404041;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 20px;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+.item-data {
+  color: whitesmoke;
+  display: block;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+}
+.container.initial .brand {
+  font-size: 7rem;
+}
+.container.initial form {
+  max-width: 800px;
+}
+.container.initial form input {
+  padding: 20px;
+  font-size: 3rem;
+}
